@@ -153,7 +153,7 @@ Route36LassScript:
 	opentext
 	checkevent EVENT_FOUGHT_SUDOWOODO
 	iftrue .ClearedSudowoodo
-	writetext Route36LassText
+	writetext Route36LassPCCText
 	waitbutton
 	closetext
 	end
@@ -509,7 +509,7 @@ RockSmashGuyText3:
 	cont "smash 'em up!"
 	done
 
-UnknownText_0x1945b8:
+Route36LassPCCText:
 	text "An odd tree is"
 	line "blocking the way"
 	cont "to GOLDENROD CITY."
@@ -521,7 +521,7 @@ UnknownText_0x1945b8:
 	line "opened…"
 	done
 
-Route36LassText:
+Route36LassText: ; Unused, English version of the above dialog.
 	text "An odd tree is"
 	line "blocking the way"
 	cont "to GOLDENROD CITY."

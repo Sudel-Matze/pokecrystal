@@ -6402,7 +6402,7 @@ Function11adc4:
 	ld [hl], a
 	and a
 	jr z, .asm_11ae28
-	hlcoord 7, 4 ;2, 14
+	hlcoord 6, 4 ; 2, 14 ; Changed from 7, 4
 	ld a, [wMenuCursorY]
 	cp $2
 	jr z, .asm_11ae23
@@ -7091,7 +7091,7 @@ Function11b242: ; pokemon to trade
 	xor a
 	ld [wMonType], a
 	farcall GetGender
-	hlcoord 7, 2 ;1, 4
+	hlcoord 6, 2 ; 1, 4 ; Changed from 7, 2
 	ld a, [wCurPartySpecies]
 	ld bc, wcd2f
 	ld [bc], a
