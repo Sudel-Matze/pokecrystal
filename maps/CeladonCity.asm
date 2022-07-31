@@ -49,7 +49,7 @@ CeladonCityTeacher2Script:
 	jumptextfaceplayer CeladonCityTeacher2Text
 
 CeladonCityLassScript:
-	jumptextfaceplayer CeladonCityLassText
+	jumptextfaceplayer CeladonCityLassText_Mobile
 
 CeladonCitySign:
 	jumptext CeladonCitySignText
@@ -165,7 +165,6 @@ CeladonCityTeacher2Text:
 	done
 
 CeladonCityLassText_Mobile:
-; unused
 	text "I love being"
 	line "surrounded by tall"
 	cont "buildings!"
@@ -183,7 +182,7 @@ CeladonCityLassText_Mobile:
 	line "KANTO…"
 	done
 
-CeladonCityLassText:
+CeladonCityLassText: ; Unused, English version replacement for above dialog.
 	text "Looking at the"
 	line "ground while I was"
 

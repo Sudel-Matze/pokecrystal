@@ -730,16 +730,16 @@ Function17aba0:
 	ldh [rVBK], a
 
 	ld hl, vTiles5 tile $00
-	ld de, GFX_17afa5
-	lb bc, BANK(GFX_17afa5), $80
+	ld de, GFX_friend_cards
+	lb bc, BANK(GFX_friend_cards), $80
 	call Get2bpp
 
 	pop af
 	ldh [rVBK], a
 
 	ld hl, vTiles0 tile $00
-	ld de, GFX_17afa5 + $4c0
-	lb bc, BANK(GFX_17afa5), 5
+	ld de, GFX_friend_cards + $4c0
+	lb bc, BANK(GFX_friend_cards), 5
 	call Get2bpp
 
 	ld hl, vTiles0 tile $05
@@ -764,7 +764,7 @@ Function17abcf:
 	ld bc, 8 palettes
 	call CopyBytes
 
-	ld hl, GFX_17afa5 + $510
+	ld hl, GFX_friend_cards + $510
 	ld de, wOBPals1 palette 1
 	ld bc, 2 palettes
 	call CopyBytes
@@ -911,5 +911,5 @@ INCBIN "gfx/unknown/17acd5.tilemap"
 Tilemap_17ae3d:
 INCBIN "gfx/unknown/17ae3d.tilemap"
 
-GFX_17afa5::
-INCBIN "gfx/unknown/17afa5.2bpp"
+GFX_friend_cards::
+INCBIN "gfx/mobile/friend_cards.2bpp"
